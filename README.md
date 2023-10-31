@@ -11,9 +11,7 @@ https://moonpage-vue.netlify.app/
 
 열기 : npm run dev
 설정 : ctrl + , : format on save 체크
-<<<<<<< Updated upstream
-=======
 
 ## 메모
+
 한 컴퍼넌트는 템플릿>  스크립트 > 스타일이 기본 (분리도 가능)
->>>>>>> Stashed changes
