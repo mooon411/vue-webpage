@@ -102,7 +102,7 @@ export default {
     top: 0;
     width: 60px;
     height: 60px;
-    background: url(src/assets/img/text_icon.svg);
+    background: url(@/assets/img/text_icon.svg);
 }
 
 .text.t1 .text__title::before {

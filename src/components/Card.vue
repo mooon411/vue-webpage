@@ -12,8 +12,8 @@
                     <img :src='card.img' :alt='card.title' />
                 </figure>
                 <div class='card__body'>
-                    <h3 class='tit'>{{card.title}}</h3>
-                    <p class='desc'>{{card.desc}}</p>
+                    <h3 class='tit'>{{ card.title }}</h3>
+                    <p class='desc'>{{ card.desc }}</p>
                     <a class='btn' href='/'>
                         더 자세히 보기
                         <span aria-hidden='true'>
@@ -32,6 +32,10 @@
 </template>
 
 <script>
+import cardImage1 from '@/assets/img/card_bg01.jpg';
+import cardImage2 from '@/assets/img/card_bg02.jpg';
+import cardImage3 from '@/assets/img/card_bg03.jpg';
+
 export default {
     props: {
         element: String,
@@ -40,19 +44,20 @@ export default {
 
     data: function () {
         return {
+
             cardInfo: [
                 {
-                    img: 'src/assets/img/card_bg01.jpg',
+                    img: cardImage1,
                     title: '웹표준 사이트 만들기',
                     desc: '사이트를 만들기 위한 기초 강의입니다. 기본 코딩에 대한 감각을 익히고, 웹 표준을 준수하면서 코딩하는 방법을 익힙니다. 다양한 예제를 통해 사이트를 만드는'
                 },
                 {
-                    img: 'src/assets/img/card_bg02.jpg',
+                    img: cardImage2,
                     title: '반응형 사이트 만들기',
                     desc: '웹표준 사이트를 완성하고, 반응형을 익히는 사이트입니다. 기본 코딩을 익히고, 반응형 감각을 키우면 모바일 및 반응형 사이트도 만들 수 있습니다. 웹표준 사이트를...'
                 },
                 {
-                    img: 'src/assets/img/card_bg03.jpg',
+                    img: cardImage3,
                     title: '패랠렉스 사이트 만들기',
                     desc: '기업 사이트 중 50% 이상이 패랙렉스 스크로링 효과로 만들어져 있습니다. 웹 표준, 반응형 사이트를 완성하였다면, 이제는 인터랙티브한 패랠렉스 스크롤링 사이트를...'
                 },
@@ -99,4 +104,5 @@ export default {
 .card__body .btn {
     font-size: 16px;
     color: #222;
-}</style>
+}
+</style> 
